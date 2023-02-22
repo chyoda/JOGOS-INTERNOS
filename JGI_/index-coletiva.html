@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style-coletiva.css">
+</head>
+<body>
+    <header>
+        <div id="direita"></div>
+        <div id="esquerda"></div>
+        <div class="container_img">
+            <img id="logo" src="logo_ete.png" alt="">
+        </div>
+        <div class="title">
+            <p>J</p>
+            <p>O</p>
+            <p>G</p>
+            <p>O</p>
+            <p>S</p>
+            <p> </p>
+            <p>I</p>
+            <p>N</p>
+            <p>T</p>
+            <p>E</p>
+            <p>R</p>
+            <p>N</p>
+            <p>O</p>
+            <p>S</p>
+        </div>
+        <div class="menu-section">
+            <div class="menu-toogle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+        <nav class="container_menu">
+            <div id="menu"> 
+                <a  id="pagina-inicial" href="index.html">PáginaInicial</a>
+                <a id="partidas" href="index-partidas.html">Partidas</a>
+                <a id="tabela" href="">Tabela</a>
+                <a id="equipes" href="">Equipes</a>
+            </div>
+        </nav>
+    </header>
+    <main>   
+        <br> <br>
+        <br> <br>
+        <div class="container-form">
+            <div id="title-form">
+                <h2>CADASTRE SUA EQUIPE</h2>
+            </div>
+            <form class="form" action="" method="post">
+                <label for="text">TURMA</label>
+                <br>
+                <select name="turma" id="turma">
+                    <option value="1° MKT - A">1º MKT - A</option>
+                    <option value="1° MKT - B">1° MKT - B</option>
+                    <option value="1° TDS - A">1° TDS - A</option>
+                    <option value="1° TDS - B">1° TDS - B</option>
+                    <option value="2° MKT - A">2° MKT - A</option>
+                    <option value="2° MKT - B">2° MKT - B</option>
+                    <option value="2° TDS - A">2° TDS - A</option>
+                    <option value="2° TDS - B">2° TDS - B</option>
+                    <option value="3° MKT - A">3° MKT - A</option>
+                    <option value="3° MKT - B">3° MKT - B</option>
+                    <option value="3° TDS - A">3° TDS - A</option>
+                    <option value="3° TDS - B">3° TDS - B</option>
+                </select>
+                <br><br>    
+                <label for="text">SELECIONE A MODALIDADE</label>
+                <br>
+                <select name="modalidade" id="modalidade">
+                    <optgroup label="Masculina">
+                        <option value="Futsal">Futsal</option>
+                        <option value="Vôlei">Vôlei</option>
+                        <option value="Basquete">Basquete</option>
+                    </optgroup>
+                    <optgroup label="Feminina">
+                        <option value="Futsal">Futsal</option>
+                        <option value="Vôlei">Vôlei</option>
+                        <option value="Handebol">Handebol</option>
+                    </optgroup>
+                    <optgroup label="Mista">
+                        <option value="Futsal">Futsal</option>
+                        <option value="Vôlei">Vôlei</option>
+                        <option value="Queimada">Queimada</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <label for="text">NOME</label> <br>
+                <input type="text" name="nome" id="nome-equipe" placeholder="Nome da equipe" required>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-01</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-02</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-03</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-04</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-05</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-06</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-07</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-08</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-09</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br> <br>
+                <div class="descricao">
+                    <label for="text">JOGADOR-10</label>
+                    <label for="text">APELIDO</label>
+                    <label for="text">N°-CAMISA</label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="jogador" id="nome-jogador" placeholder="Nome do jogador">
+                    <input type="text" name="apelido" id="apelido-jogador">
+                    <input type="number" name="n° camisa" id="numero-camisa">
+                </div> 
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Titular</label>
+                <input type="radio" name="tipo" id="tipo-jogador">
+                <label for="text">Reserva</label>
+                <br>
+                <input type="button" id="button" value="Cadastrar">
+            </form>
+        </div>
+        
+    </main>
+</body>
+</html>

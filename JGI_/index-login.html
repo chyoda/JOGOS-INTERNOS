@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style-login.css">
+</head>
+<body>
+    <header>
+        <div id="direita"></div>
+        <div id="esquerda"></div>
+        <div class="container_img">
+            <img id="logo" src="logo_ete.png" alt="">
+        </div>
+        <div class="title">
+            <p>J</p>
+            <p>O</p>
+            <p>G</p>
+            <p>O</p>
+            <p>S</p>
+            <p> </p>
+            <p>I</p>
+            <p>N</p>
+            <p>T</p>
+            <p>E</p>
+            <p>R</p>
+            <p>N</p>
+            <p>O</p>
+            <p>S</p>
+        </div>
+        <div class="menu-section">
+            <div class="menu-toogle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+        <nav class="container_menu">
+            <div id="menu"> 
+                <a  id="pagina-inicial" href="index.html">PáginaInicial</a>
+                <a id="partidas" href="index-partidas.html">Partidas</a>
+                <a id="tabela" href="">Tabela</a>
+                <a id="equipes" href="">Equipes</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <nav class="div-invisivel">
+            <form id="form-repre" action="php\login.php" method="post">
+                <label for="text">Email</label>
+                <br> 
+                <input type="text" name="email" id="email" placeholder="Digite o email" required="required">
+                <br> <br>
+                <label for="text">Password</label>
+                <br>
+                <input type="password" name="senha" id="senha" placeholder="Digite a senha" required="required">
+                <button id="entrar" onclick="funcao1()" type="submit"><a href="index-repre.html">Entrar</a></button>
+            </form>
+        </nav> <br> <br>
+        <nav class="div-invisivel-2">
+            <form id="form-prof" action="php\login.php" method="post">
+                <label for="text">Email</label>
+                <br> 
+                <input type="text" name="email" id="email" placeholder="Digite o email" required="required">
+                <br>
+                <label for="text">Password</label>
+                <br> 
+                <input type="password" name="senha" id="senha" placeholder="Digite a senha" required="required">
+                <button id="entrar" onclick="funcao1()" type="submit"><a href="index-op-profe.html">Entrar</a></button>
+            </form>
+        </nav> <br> <br>
+        <nav class="container-acesso">
+            <div id="label">
+                <label for="text">Entrar como</label>
+            </div>
+            <div class="op">
+                <button onclick="mostraClick()">Representante</button>
+            </div>
+            <br>
+            <div class="op">
+                <button onclick="mostraClick2()">Professor</button>
+            </div>
+        </nav>
+        
+    </main>
+    <script>
+      const mostraClick = () => {
+        var adicionar = document.querySelector('.div-invisivel');
+        adicionar.classList.add('div-visivel')
+        var adicionar = document.querySelector('.container-acesso');
+        adicionar.classList.add('div-invisivel')
+      }
+      const mostraClick2 = () => {
+        var adicionar = document.querySelector('.div-invisivel-2');
+        adicionar.classList.add('div-visivel')
+        var adicionar = document.querySelector('.container-acesso');
+        adicionar.classList.add('div-invisivel-2')
+      }
+      function funcao1() {
+        alert("Login realizado com sucesso!");
+      }
+
+        
+    </script>
+</body>
+</html>
